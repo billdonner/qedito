@@ -8,25 +8,29 @@
 import SwiftUI
 import SwiftData
 
+
+
 @main
 struct qeditoApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+  @Environment(\.colorScheme) var colorScheme
+  var sharedModelContainer: ModelContainer = {
+      let schema = Schema([
+        QTopic.self,Question.self
+      ])
+      let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+      do {
+          return try ModelContainer(for: schema, configurations: [modelConfiguration])
+      } catch {
+          fatalError("Could not create ModelContainer: \(error)")
+      }
+  }()
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
+  var body: some Scene {
+      WindowGroup {
+          ContentView() 
+          .environment(\.colorScheme, .dark) // Force light mode
+      }
+      .modelContainer(sharedModelContainer)
+  }
 }

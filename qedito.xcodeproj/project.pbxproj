@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		884D01582AF8378000722EC6 /* qeditoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D01572AF8378000722EC6 /* qeditoApp.swift */; };
 		884D015A2AF8378000722EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D01592AF8378000722EC6 /* ContentView.swift */; };
-		884D015C2AF8378000722EC6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D015B2AF8378000722EC6 /* Item.swift */; };
 		884D015E2AF8378100722EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884D015D2AF8378100722EC6 /* Assets.xcassets */; };
 		884D01612AF8378100722EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884D01602AF8378100722EC6 /* Preview Assets.xcassets */; };
+		884D016B2AF837DE00722EC6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D016A2AF837DD00722EC6 /* Question.swift */; };
+		884D016D2AF8385100722EC6 /* QTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D016C2AF8385100722EC6 /* QTopic.swift */; };
+		884D016F2AF8435E00722EC6 /* EditQTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D016E2AF8435E00722EC6 /* EditQTopicView.swift */; };
+		884D01712AF84DE300722EC6 /* QTopicListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D01702AF84DE300722EC6 /* QTopicListingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		884D01542AF8378000722EC6 /* qedito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qedito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884D01572AF8378000722EC6 /* qeditoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qeditoApp.swift; sourceTree = "<group>"; };
 		884D01592AF8378000722EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		884D015B2AF8378000722EC6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		884D015D2AF8378100722EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		884D01602AF8378100722EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		884D01622AF8378100722EC6 /* qedito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qedito.entitlements; sourceTree = "<group>"; };
+		884D016A2AF837DD00722EC6 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		884D016C2AF8385100722EC6 /* QTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTopic.swift; sourceTree = "<group>"; };
+		884D016E2AF8435E00722EC6 /* EditQTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditQTopicView.swift; sourceTree = "<group>"; };
+		884D01702AF84DE300722EC6 /* QTopicListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTopicListingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				884D01572AF8378000722EC6 /* qeditoApp.swift */,
+				884D016A2AF837DD00722EC6 /* Question.swift */,
+				884D016C2AF8385100722EC6 /* QTopic.swift */,
+				884D01702AF84DE300722EC6 /* QTopicListingView.swift */,
 				884D01592AF8378000722EC6 /* ContentView.swift */,
-				884D015B2AF8378000722EC6 /* Item.swift */,
+				884D016E2AF8435E00722EC6 /* EditQTopicView.swift */,
 				884D015D2AF8378100722EC6 /* Assets.xcassets */,
 				884D01622AF8378100722EC6 /* qedito.entitlements */,
 				884D015F2AF8378100722EC6 /* Preview Content */,
@@ -143,8 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				884D015A2AF8378000722EC6 /* ContentView.swift in Sources */,
-				884D015C2AF8378000722EC6 /* Item.swift in Sources */,
+				884D016B2AF837DE00722EC6 /* Question.swift in Sources */,
 				884D01582AF8378000722EC6 /* qeditoApp.swift in Sources */,
+				884D016F2AF8435E00722EC6 /* EditQTopicView.swift in Sources */,
+				884D01712AF84DE300722EC6 /* QTopicListingView.swift in Sources */,
+				884D016D2AF8385100722EC6 /* QTopic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
